@@ -1,57 +1,188 @@
 import { motion } from "framer-motion";
-import heroCampus from "../../assets/images/image-vasant.png"
+import heroCampus from "../../assets/images/image-vasant.png";
 
 export default function Hero() {
-    return (
-        <section className="relative min-h-screen flex items-center bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white overflow-hidden">
-            {/* Background circles */}
-            <div className="absolute -top-24 -left-24 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl"></div>
+  return (
+    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white">
 
-            <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
-                <motion.div
-                    initial={{ opacity: 0, y: 40 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                >
-                    <p className="uppercase tracking-widest text-blue-300 font-semibold">
-                        Excellence in Education
-                    </p>
+      {/* Background Glow */}
+      <div className="absolute inset-0">
+        <div className="absolute -top-40 -left-32 h-96 w-96 rounded-full bg-blue-500/20 blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 h-[450px] w-[450px] rounded-full bg-indigo-500/20 blur-3xl"></div>
+      </div>
 
-                    <h1 className="mt-4 text-5xl md:text-7xl font-bold leading-tight">
-                        Vasant Valley School
-                    </h1>
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-6">
 
-                    <p className="mt-6 text-lg text-slate-300 max-w-xl">
-                        We encourage students to push the boundaries of current understanding and set benchmarks in the field of education.
-                    </p>
+        <div className="grid gap-16 lg:grid-cols-2 items-center">
 
-                    <div className="mt-8 flex flex-wrap gap-4">
-                        <button className="px-8 py-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition">
-                            Explore Campus
-                        </button>
+          {/* LEFT */}
 
-                        <button className="px-8 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">
-                            Apply Now
-                        </button>
-                    </div>
-                </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -60 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: .8 }}
+          >
 
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 1 }}
-                    className="hidden lg:flex justify-center"
-                >
-                    <div className="w-[420px] h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-white/20 ml-200">
-                        <img
-                            src={heroCampus}
-                            alt="School Campus"
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                        />
-                    </div>
-                </motion.div>
+            <p className="uppercase tracking-[5px] text-blue-300 font-semibold">
+              Excellence in Education
+            </p>
+
+            <h1 className="mt-6 text-6xl font-extrabold leading-tight">
+
+              Empowering
+
+              <span className="block text-blue-400">
+                Future Leaders
+              </span>
+
+            </h1>
+
+            <p className="mt-8 max-w-xl text-lg text-slate-300 leading-8">
+
+              A modern learning environment where innovation,
+              curiosity and excellence inspire every student
+              to become tomorrow's leader.
+
+            </p>
+
+            <div className="mt-10 flex gap-5 flex-wrap">
+
+              <button className="rounded-xl bg-blue-600 px-8 py-4 font-semibold shadow-lg transition hover:scale-105 hover:bg-blue-700">
+
+                Explore Campus
+
+              </button>
+
+              <button className="rounded-xl border border-white px-8 py-4 font-semibold transition hover:bg-white hover:text-black">
+
+                Admissions Open
+
+              </button>
+
             </div>
-        </section>
-    );
+
+          </motion.div>
+
+          {/* RIGHT */}
+
+          <motion.div
+
+            initial={{ opacity: 0, x: 60 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+
+            className="relative flex justify-center"
+
+          >
+
+            <div className="relative h-[580px] w-[430px] overflow-hidden rounded-[35px] shadow-2xl">
+
+              <img
+
+                src={heroCampus}
+
+                alt="Campus"
+
+                className="h-full w-full object-cover"
+
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent"></div>
+
+            </div>
+
+            {/* Students */}
+
+            <motion.div
+
+              animate={{ y: [0, -12, 0] }}
+
+              transition={{
+
+                duration: 3,
+
+                repeat: Infinity,
+
+              }}
+
+              className="absolute left-0 top-12 rounded-2xl bg-white p-5 shadow-2xl"
+
+            >
+
+              <h2 className="text-3xl font-bold text-blue-600">
+
+                1500+
+
+              </h2>
+
+              <p className="text-gray-600">
+
+                Students
+
+              </p>
+
+            </motion.div>
+
+            {/* Faculty */}
+
+            <motion.div
+
+              animate={{ y: [0, 12, 0] }}
+
+              transition={{
+
+                duration: 4,
+
+                repeat: Infinity,
+
+              }}
+
+              className="absolute -right-2 bottom-24 rounded-2xl bg-white p-5 shadow-2xl"
+
+            >
+
+              <h2 className="text-3xl font-bold text-green-600">
+
+                120+
+
+              </h2>
+
+              <p className="text-gray-600">
+
+                Faculty
+
+              </p>
+
+            </motion.div>
+
+            {/* Badge */}
+
+            <motion.div
+
+              animate={{ scale: [1, 1.05, 1] }}
+
+              transition={{
+
+                duration: 3,
+
+                repeat: Infinity,
+
+              }}
+
+              className="absolute bottom-8 left-10 rounded-full bg-blue-600 px-6 py-3 font-semibold shadow-xl"
+
+            >
+
+              ⭐ 25+ Years of Excellence
+
+            </motion.div>
+
+          </motion.div>
+
+        </div>
+
+      </div>
+
+    </section>
+  );
 }

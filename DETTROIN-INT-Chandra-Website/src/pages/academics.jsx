@@ -1,7 +1,31 @@
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
+
+import AcademicsHero from "../components/academics/AcademicsHero";
+import LearningApproach from "../components/academics/LearningApproach";
+import Programs from "../components/academics/Programs";
+import Facilities from "../components/academics/Facilities";
+import Activities from "../components/academics/Activities";
+import CTA from "../components/home/CTA";
+
 export default function Academics() {
   return (
-    <div className="text-center py-32">
-      <h1 className="text-5xl font-bold">Academics</h1>
-    </div>
+    <>
+      <Navbar />
+
+      <AcademicsHero />
+
+      <LearningApproach />
+
+      <Programs />
+
+      <Facilities />
+
+      <Activities />
+
+      <CTA />
+
+      <Footer />
+    </>
   );
 }

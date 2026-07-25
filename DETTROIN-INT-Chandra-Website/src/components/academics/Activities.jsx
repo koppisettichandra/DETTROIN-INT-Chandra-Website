@@ -11,7 +11,7 @@ const activities = [
 
 export default function Activities() {
   return (
-    <section className="py-24 bg-slate-50">
+    <section className="py-16 md:py-24 bg-slate-50">
 
       <div className="max-w-7xl mx-auto px-6">
 
@@ -21,13 +21,17 @@ export default function Activities() {
             Beyond Academics
           </p>
 
-          <h2 className="text-5xl font-bold mt-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4">
             Co-Curricular Activities
           </h2>
 
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+        <div className="grid md:grid-cols-2 lg:grid
+grid-cols-1
+md:grid-cols-2
+lg:grid-cols-4
+gap-8 gap-6 mt-16">
 
           {activities.map((activity) => (
 

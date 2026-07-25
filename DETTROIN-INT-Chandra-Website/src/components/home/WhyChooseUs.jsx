@@ -28,7 +28,7 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-slate-50 py-24">
+    <section className="bg-slate-50 py-16 md:py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6">
 
         <motion.div
@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
             Why Choose Us
           </p>
 
-          <h2 className="mt-3 text-5xl font-bold text-slate-900">
+          <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900">
             Learning Beyond Classrooms
           </h2>
 

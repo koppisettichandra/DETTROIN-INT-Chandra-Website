@@ -11,7 +11,7 @@ const images = [g1, g2, g3, g4, g5, g6];
 
 export default function GalleryPreview() {
   return (
-    <section className="py-24 bg-slate-100">
+    <section className="py-16 md:py-24 bg-slate-100">
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="text-center mb-14">
@@ -19,7 +19,7 @@ export default function GalleryPreview() {
             Campus Life
           </p>
 
-          <h2 className="text-5xl font-bold mt-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4">
             Experience Learning Beyond Books
           </h2>
 

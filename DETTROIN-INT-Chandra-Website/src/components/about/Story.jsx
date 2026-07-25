@@ -2,7 +2,7 @@ import campus from "../../assets/images/image-vasant.png";
 
 export default function Story() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -10,7 +10,14 @@ export default function Story() {
           <img
             src={campus}
             alt="Campus"
-            className="rounded-3xl shadow-xl w-full h-[500px] object-cover"
+            className="
+w-full
+h-64
+md:h-96
+lg:h-[500px]
+object-cover
+rounded-3xl
+"
           />
 
           <div>
@@ -19,7 +26,7 @@ export default function Story() {
               Our Story
             </p>
 
-            <h2 className="text-5xl font-bold mt-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-bold mt-4">
               A Legacy of Learning
             </h2>
 

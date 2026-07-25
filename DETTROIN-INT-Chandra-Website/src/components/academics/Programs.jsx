@@ -18,7 +18,7 @@ const programs = [
 
 export default function Programs() {
   return (
-    <section className="py-24 bg-slate-50">
+    <section className="py-16 md:py-24 bg-slate-50">
 
       <div className="max-w-7xl mx-auto px-6">
 
@@ -28,7 +28,7 @@ export default function Programs() {
             Academic Programs
           </p>
 
-          <h2 className="text-5xl font-bold mt-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4">
             Curriculum Designed for Success
           </h2>
 

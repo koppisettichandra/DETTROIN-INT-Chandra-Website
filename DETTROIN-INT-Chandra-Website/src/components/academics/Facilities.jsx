@@ -46,7 +46,7 @@ const facilities = [
 
 export default function Facilities() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="text-center mb-16">
@@ -55,7 +55,7 @@ export default function Facilities() {
             Campus Facilities
           </p>
 
-          <h2 className="text-5xl font-bold mt-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4">
             Inspiring Spaces for Learning
           </h2>
 
@@ -66,7 +66,11 @@ export default function Facilities() {
 
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid
+grid-cols-1
+md:grid-cols-2
+lg:grid-cols-4
+gap-8 gap-8">
 
           {facilities.map((facility) => (
 

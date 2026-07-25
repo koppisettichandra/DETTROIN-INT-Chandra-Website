@@ -1,8 +1,11 @@
-import { NavLink } from "react-router-dom";
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
-  const navItems = [
+  const [open, setOpen] = useState(false);
+
+  const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Academics", path: "/academics" },
@@ -11,47 +14,46 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-white/80 border-b border-gray-200">
-      <nav className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <nav className="bg-white shadow sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-        <div className="text-2xl font-bold text-blue-700">
-          VVS
+        <Link
+          to="/"
+          className="text-2xl font-bold text-[#9E0E21]"
+        >
+          Vasant Valley
+        </Link>
+
+        <div className="hidden md:flex gap-8">
+          {navLinks.map((link) => (
+            <Link key={link.path} to={link.path}>
+              {link.name}
+            </Link>
+          ))}
         </div>
 
-        <ul className="hidden md:flex items-center gap-8">
+        <button
+          className="md:hidden"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? <FaTimes size={24} /> : <FaBars size={24} />}
+        </button>
+      </div>
 
-          {navItems.map((item) => (
-
-            <li key={item.name}>
-
-              <NavLink
-                to={item.path}
-                className={({ isActive }) =>
-                  `font-medium transition ${
-                    isActive
-                      ? "text-blue-600"
-                      : "text-gray-700 hover:text-blue-600"
-                  }`
-                }
-              >
-                {item.name}
-              </NavLink>
-
-            </li>
-
+      {open && (
+        <div className="md:hidden bg-white border-t">
+          {navLinks.map((link) => (
+            <Link
+              key={link.path}
+              to={link.path}
+              onClick={() => setOpen(false)}
+              className="block px-6 py-4 hover:bg-gray-100"
+            >
+              {link.name}
+            </Link>
           ))}
-
-        </ul>
-
-        <button className="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
-          Apply Now
-        </button>
-
-        <button className="md:hidden">
-          <HiOutlineMenuAlt3 size={28} />
-        </button>
-
-      </nav>
-    </header>
+        </div>
+      )}
+    </nav>
   );
 }

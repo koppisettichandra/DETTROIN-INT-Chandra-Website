@@ -6,7 +6,7 @@ import { news } from "../../data/news";
 
 export default function News() {
   return (
-    <section className="py-24 bg-slate-50">
+    <section className="py-16 md:py-24 bg-slate-50">
 
       <Container>
 

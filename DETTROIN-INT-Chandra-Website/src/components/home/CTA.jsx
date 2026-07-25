@@ -1,11 +1,11 @@
 export default function CTA() {
   return (
-    <section className="py-24">
+    <section className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-6">
 
         <div className="rounded-[40px] bg-gradient-to-r from-blue-700 to-indigo-700 text-white p-16 text-center shadow-2xl">
 
-          <h2 className="text-5xl font-bold">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
             Admissions Open for 2026
           </h2>
 

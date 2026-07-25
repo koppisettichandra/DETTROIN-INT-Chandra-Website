@@ -34,7 +34,7 @@ const approaches = [
 
 export default function LearningApproach() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="text-center">
@@ -43,7 +43,7 @@ export default function LearningApproach() {
             Learning Approach
           </p>
 
-          <h2 className="text-5xl font-bold mt-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4">
             Education Beyond Books
           </h2>
 
@@ -54,7 +54,11 @@ export default function LearningApproach() {
 
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+        <div className="grid md:grid-cols-2 lg:grid
+grid-cols-1
+md:grid-cols-2
+lg:grid-cols-4
+gap-8grid-cols-4 gap-8 mt-16">
 
           {approaches.map((item) => (
 
@@ -63,7 +67,7 @@ export default function LearningApproach() {
               className="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition duration-300"
             >
 
-              <div className="text-5xl text-[#9E0E21]">
+              <div className="text-3xl md:text-4xl lg:text-5xl font-bold9E0E21]">
 
                 {item.icon}
 

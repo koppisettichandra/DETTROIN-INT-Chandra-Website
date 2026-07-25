@@ -6,11 +6,11 @@ export default function AboutHero() {
           About Us
         </p>
 
-        <h1 className="text-6xl font-bold mt-4">
+        <h1 className="text-4xl md:text-3xl md:text-4xl lg:text-5xl font-bold lg:text-6xl font-bold mt-4">
           Shaping Future Leaders
         </h1>
 
-        <p className="mt-6 max-w-2xl text-lg text-red-100">
+        <p className="mt-6 max-w-2xl text-base md:text-lg leading-8 text-red-100">
           We inspire students through academic excellence, innovation,
           leadership and holistic education.
         </p>

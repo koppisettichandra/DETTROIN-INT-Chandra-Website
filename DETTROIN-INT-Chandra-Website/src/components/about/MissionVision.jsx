@@ -2,7 +2,7 @@ import { FaBullseye, FaEye } from "react-icons/fa";
 
 export default function MissionVision() {
   return (
-    <section className="py-24 bg-slate-50">
+    <section className="py-16 md:py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="text-center mb-16">
@@ -11,7 +11,7 @@ export default function MissionVision() {
             Our Purpose
           </p>
 
-          <h2 className="text-5xl font-bold mt-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl  font-bold mt-4">
             Mission & Vision
           </h2>
 
@@ -21,7 +21,7 @@ export default function MissionVision() {
 
           <div className="bg-white rounded-3xl p-10 shadow-lg hover:shadow-xl transition">
 
-            <FaBullseye className="text-5xl text-[#9E0E21]" />
+            <FaBullseye className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#9E0E21]" />
 
             <h3 className="text-3xl font-bold mt-6">
               Our Mission
@@ -37,7 +37,7 @@ export default function MissionVision() {
 
           <div className="bg-white rounded-3xl p-10 shadow-lg hover:shadow-xl transition">
 
-            <FaEye className="text-5xl text-[#9E0E21]" />
+            <FaEye className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#9E0E21]" />
 
             <h3 className="text-3xl font-bold mt-6">
               Our Vision

@@ -1,7 +1,25 @@
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
+
+import ContactHero from "../components/contact/ContactHero";
+import ContactInfo from "../components/contact/ContactInfo";
+import ContactForm from "../components/contact/ContactForm";
+import MapSection from "../components/contact/MapSection";
+
 export default function Contact() {
   return (
-    <div className="text-center py-32">
-      <h1 className="text-5xl font-bold">Contact Page</h1>
-    </div>
+    <>
+      <Navbar />
+
+      <ContactHero />
+
+      <ContactInfo />
+
+      <ContactForm />
+
+      <MapSection />
+
+      <Footer />
+    </>
   );
 }

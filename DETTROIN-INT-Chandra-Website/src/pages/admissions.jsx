@@ -1,7 +1,25 @@
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
+
+import AdmissionsHero from "../components/admissions/AdmissionsHero";
+import AdmissionProcess from "../components/admissions/AdmissionProcess";
+import Documents from "../components/admissions/Documents";
+import CTA from "../components/home/CTA";
+
 export default function Admissions() {
   return (
-    <div className="text-center py-32">
-      <h1 className="text-5xl font-bold">Admissions</h1>
-    </div>
+    <>
+      <Navbar />
+
+      <AdmissionsHero />
+
+      <AdmissionProcess />
+
+      <Documents />
+
+      <CTA />
+
+      <Footer />
+    </>
   );
 }

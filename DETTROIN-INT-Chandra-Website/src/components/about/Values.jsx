@@ -30,7 +30,7 @@ const values = [
 
 export default function Values() {
   return (
-    <section className="py-24">
+    <section className="py-16 md:py-24">
 
       <div className="max-w-7xl mx-auto px-6">
 
@@ -40,13 +40,17 @@ export default function Values() {
             Core Values
           </p>
 
-          <h2 className="text-5xl font-bold mt-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold-5xl font-bold mt-4">
             What Defines Us
           </h2>
 
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+        <div className="grid md:grid-cols-2 lg:grid
+grid-cols-1
+md:grid-cols-2
+lg:grid-cols-4
+gap-8 gap-8 mt-16">
 
           {values.map((value) => (
 
@@ -55,7 +59,7 @@ export default function Values() {
               className="bg-white rounded-3xl shadow-lg p-8 hover:-translate-y-2 transition"
             >
 
-              <div className="text-5xl text-[#9E0E21]">
+              <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#9E0E21]">
 
                 {value.icon}
 

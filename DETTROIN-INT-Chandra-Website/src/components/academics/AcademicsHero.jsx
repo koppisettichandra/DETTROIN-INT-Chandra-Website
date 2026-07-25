@@ -6,7 +6,7 @@ export default function AcademicsHero() {
           Academics
         </p>
 
-        <h1 className="text-5xl md:text-6xl font-bold mt-4">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4">
           Inspiring Excellence Through Learning
         </h1>
 

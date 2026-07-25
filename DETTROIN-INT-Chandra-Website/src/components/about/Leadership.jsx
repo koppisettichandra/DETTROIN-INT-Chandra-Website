@@ -2,7 +2,7 @@ import principal from "../../assets/images/image-vasant.png";
 
 export default function Leadership() {
   return (
-    <section className="py-24 bg-slate-50">
+    <section className="py-16 md:py-24 bg-slate-50">
 
       <div className="max-w-7xl mx-auto px-6">
 
@@ -11,7 +11,14 @@ export default function Leadership() {
           <img
             src={principal}
             alt="Principal"
-            className="rounded-3xl h-[500px] w-full object-cover shadow-xl"
+            className="
+w-full
+h-64
+md:h-96
+lg:h-[500px]
+object-cover
+rounded-3xl
+"
           />
 
           <div>
@@ -20,7 +27,7 @@ export default function Leadership() {
               Leadership
             </p>
 
-            <h2 className="text-5xl font-bold mt-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl  font-bold mt-4">
               Principal's Message
             </h2>
 

@@ -18,7 +18,7 @@ gap-8 gap-8">
             key={item.label}
             className="text-center p-6 rounded-xl shadow-md hover:shadow-xl transition"
           >
-            <h2 className="text-4xl font-bold text-blue-600">{item.number}</h2>
+            <h2 className="text-4xl font-bold text-red-600">{item.number}</h2>
             <p className="mt-2 text-gray-600">{item.label}</p>
           </div>
         ))}

@@ -27,7 +27,7 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="text-center">
-          <p className="uppercase tracking-widest text-blue-600 font-semibold">
+          <p className="uppercase tracking-widest text-red-600 font-semibold">
             Testimonials
           </p>
 
@@ -47,7 +47,7 @@ export default function Testimonials() {
 
               <FaQuoteLeft
                 size={35}
-                className="text-blue-600"
+                className="text-red-600"
               />
 
               <p className="mt-6 leading-8 text-slate-600">

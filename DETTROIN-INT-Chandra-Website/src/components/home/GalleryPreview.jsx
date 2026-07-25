@@ -15,7 +15,7 @@ export default function GalleryPreview() {
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="text-center mb-14">
-          <p className="uppercase tracking-widest text-blue-600 font-semibold">
+          <p className="uppercase tracking-widest text-red-600 font-semibold">
             Campus Life
           </p>
 

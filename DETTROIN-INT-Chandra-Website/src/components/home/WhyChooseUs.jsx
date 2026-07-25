@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-blue-600 font-semibold uppercase tracking-widest">
+          <p className="text-red-600 font-semibold uppercase tracking-widest">
             Why Choose Us
           </p>
 
@@ -65,7 +65,7 @@ export default function WhyChooseUs() {
               className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition"
             >
 
-              <div className="w-16 h-16 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center">
+              <div className="w-16 h-16 rounded-2xl bg-red-100 text-red-600 flex items-center justify-center">
                 {feature.icon}
               </div>
 

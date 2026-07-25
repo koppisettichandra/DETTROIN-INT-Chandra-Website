@@ -3,13 +3,8 @@ import heroCampus from "../../assets/images/image-vasant.png";
 
 export default function Hero() {
     return (
-        <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white">
+        <section className="relative min-h-screen overflow-hidden bg-gradient-to-r from-[#9E0E21] to-orange-700 text-white">
 
-            {/* Background Glow */}
-            <div className="absolute inset-0">
-                <div className="absolute -top-40 -left-32 h-96 w-96 rounded-full bg-blue-500/20 blur-3xl"></div>
-                <div className="absolute bottom-0 right-0 h-[450px] w-[450px] rounded-full bg-indigo-500/20 blur-3xl"></div>
-            </div>
 
             <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-6">
 
@@ -23,7 +18,7 @@ export default function Hero() {
                         transition={{ duration: .8 }}
                     >
 
-                        <p className="uppercase tracking-[5px] text-blue-300 font-semibold">
+                        <p className="uppercase tracking-[5px] text-red-300 font-semibold">
                             Excellence in Deed
                         </p>
 
@@ -41,7 +36,7 @@ export default function Hero() {
 
                         <div className="mt-10 flex gap-5 flex-wrap">
 
-                            <button className="rounded-xl bg-blue-600 px-8 py-4 font-semibold shadow-lg transition hover:scale-105 hover:bg-blue-700">
+                            <button className="rounded-xl bg-red-600 px-8 py-4 font-semibold shadow-lg transition hover:scale-105 hover:bg-red-700">
 
                                 Explore Campus
 
@@ -103,7 +98,7 @@ export default function Hero() {
 
                         >
 
-                            <h2 className="text-3xl font-bold text-blue-600">
+                            <h2 className="text-3xl font-bold text-red-600">
 
                                 1500+
 
@@ -163,7 +158,7 @@ export default function Hero() {
 
                             }}
 
-                            className="absolute bottom-8 left-10 rounded-full bg-blue-600 px-6 py-3 font-semibold shadow-xl"
+                            className="absolute bottom-8 left-10 rounded-full bg-red-600 px-6 py-3 font-semibold shadow-xl"
 
                         >
 

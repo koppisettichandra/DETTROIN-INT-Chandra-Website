@@ -28,14 +28,14 @@ export default function Programs() {
 
             <div
               key={program.title}
-              className="rounded-3xl bg-gradient-to-br from-blue-600 to-indigo-700 text-white p-8 hover:scale-105 transition"
+              className="rounded-3xl bg-gradient-to-br from-red-600 to-orange-700 text-white p-8 hover:scale-105 transition"
             >
 
               <h3 className="text-3xl font-bold">
                 {program.title}
               </h3>
 
-              <p className="mt-6 text-blue-100">
+              <p className="mt-6 text-red-100">
                 {program.description}
               </p>
 

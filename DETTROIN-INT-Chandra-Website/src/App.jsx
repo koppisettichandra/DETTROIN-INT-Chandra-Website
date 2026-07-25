@@ -6,6 +6,7 @@ import Academics from "./pages/Academics";
 import Admissions from "./pages/Admissions";
 import Contact from "./pages/Contact";
 
+
 export default function App() {
   return (
     <BrowserRouter>
